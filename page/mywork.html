@@ -20,7 +20,7 @@
 		
 					.menu { width:150px; position:absolute; top:10px; right:10px; z-index:999; cursor:pointer; position:fixed;}
 	
-			.menu img { width:150px; height:100px;top:0%; left:92%; position:fixed; }
+			.menu img { width:150px; height:100px;top:0%; left:90%; position:fixed; }
 			nav { position:fixed; width:306px; height:100%; right:-306px; top:0; z-index:9999; background:url(../image/long.png) no-repeat;}
 			nav .gnb { position:absolute; top:150px; left:40px; }
 			nav li { margin:20px 0; cursor:pointer;}
@@ -79,6 +79,9 @@
 			});
 
 
-			$()
+			$('.menu').mouseenter(function(){
+				$('.menu>img').attr("src","../image/menuhover.png");
+			});
+
 	</script>		
 </html>

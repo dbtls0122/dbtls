@@ -42,7 +42,7 @@
 
 			
 			.menu { width:250px; position:absolute; top:10px; right:10px; z-index:999; cursor:pointer; position:fixed;}
-			.menu img { width:150px; height:100px;top:0%; left:92%; position:fixed; }
+			.menu img { width:150px; height:100px;top:0%; left:90%; position:fixed; }
 			nav { position:fixed; width:306px; height:100%; right:-306px; top:0; z-index:9999; background:url(image/long.png) no-repeat;}
 			nav .gnb { position:absolute; top:150px; left:40px; }
 			nav li { margin:20px 0; cursor:pointer;}
@@ -52,6 +52,7 @@
 			.open{ position:absolute; background-image:url('image/menuback.png'); width:140px; height:150px; bottom:-20px; right:-10px; z-index:999; cursor:pointer;}
 
 
+			
 
 		</style>
 			
@@ -103,5 +104,9 @@
 				$("nav").animate({ right:0 },400);
 			});
 
+
+			$('.menu').mouseenter(function(){
+				$(this).src('image/menuhover.png');
+			});
 	</script>		
 </html>
